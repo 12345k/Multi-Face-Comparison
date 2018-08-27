@@ -19,10 +19,11 @@ pip install scipy
 Distance and Boolean value. Distance is higher means it is false and lower is True
 
 ###### Example
+```
 > desktop-su-02@Desktop-SU-02:~/Documents/face-recongition-master$ python compare_image.py  ami.jpg AMI.jpg  
 > 0.5439451765528829
 > True
-
+```
 ## Output for compare_api.py
 
 Output will be in  json format. Addition I have calculate time take to predict
