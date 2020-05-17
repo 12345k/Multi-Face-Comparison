@@ -1,4 +1,4 @@
-# Two-Face-Comparison
+# Multi-Face-Comparison
 
 Compare two images and it will return True or False. This is the main focus of this repo. I have attached two py file.
 One is compare_image.py this can be run in the terminal with two images name like
@@ -36,14 +36,14 @@ Output will be in  json format. Addition I have calculate time take to predict
     {
         "result": "True",
         "distance": 0.0,
-        "time_taken": "0.3203427791595459",
+        "time_taken": 0.29,
         "target": "rajini.jpeg",
         "face": "rajini.jpeg"
     },
     {
         "result": "False",
-        "distance": 0.7720132497612807,
-        "time_taken": "0.311934232711792",
+        "distance": 0.77,
+        "time_taken": 0.339,
         "target": "rajini.jpeg",
         "face": "kamal.jpg"
     }

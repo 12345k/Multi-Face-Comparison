@@ -26,8 +26,8 @@ def upload_file():
         end=time.time()
         json_contect={
                 'result':str(result),
-                'distance':distance,
-                'time_taken':str(end-start),
+                'distance':round(distance,2),
+                'time_taken':round(end-start,3),
                 'target':target_filename,
                 'face':secure_filename(face.filename)
             }
