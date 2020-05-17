@@ -31,14 +31,12 @@ def test_image(image_to_check, known_names, known_face_encodings):
             unknown_image = scipy.misc.imresize(unknown_image, scale_factor)
 
     unknown_encodings = face_recognition.face_encodings(unknown_image)
-    print("unknown_encodings "+str(unknown_encodings))
-
     if len(unknown_encodings)==1:
         for unknown_encoding in unknown_encodings:
             result = face_recognition.compare_faces(known_face_encodings, unknown_encoding)
             distance = face_recognition.face_distance(known_face_encodings, unknown_encoding)
-            print(distance[0])
-            print("True") if True in result else print("False ")
+            # print(distance[0])
+            # print("True") if True in result else print("False ")
 
         return distance[0],result[0]
     else:
@@ -54,11 +52,6 @@ def main(known_people_folder, image_to_check):
     known_names, known_face_encodings = scan_known_people(known_people_folder)
     distance,result=test_image(image_to_check, known_names, known_face_encodings)
     return distance,result
-    
-
-
-    
-
 
 if __name__ == "__main__":
 
