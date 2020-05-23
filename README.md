@@ -61,7 +61,7 @@ Output will be in  json format. Addition I have calculate time take to predict
 I have used postman to check the api. The url mostly will be like http://localhost:8000/compare_faces in POST format.
 #### form-data key name will be target and faces in Postman
 
-![request](https://github.com/12345k/Multi-Face-Comparison/blob/master/screenshot/compare_image.png)
+![request](https://github.com/12345k/Multi-Face-Comparison/blob/master/screenshot/compare_faces.png)
 
 
 
